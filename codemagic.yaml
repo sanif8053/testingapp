@@ -1,0 +1,12 @@
+workflows:
+  sample-workflow:
+    name: Schedule an automation test with Sofy
+    scripts:
+      - name: Schedule an automation test with Sofy
+        script: |
+          curl --location --request POST 'https://api.sofy.ai/api/CICD/ScheduleAutomatedTestRun' \
+            --header 'Content-Type: application/json' \
+            --data-raw '{
+              "APIKey": "$SOFY_API_KEY",
+              "ScheduledID": 2612
+            }'
