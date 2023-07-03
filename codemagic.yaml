@@ -10,6 +10,6 @@ workflows:
           curl --location --request POST 'https://api.sofy.ai/api/CICD/ScheduleAutomatedTestRun' \
             --header 'Content-Type: application/json' \
             --data-raw '{
-              "APIKey": $key,
+              "APIKey": "$key",
               "ScheduledID": 2612
             }'
