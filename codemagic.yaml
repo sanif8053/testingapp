@@ -3,7 +3,7 @@ workflows:
     name: Schedule an automation test with Sofy
     environment:
       vars:
-        SOFY_API_KEY: 1027B480-00D9-45EF-8D14-D728E0DE70F7
+        SOFY_API_KEY: "1027B480-00D9-45EF-8D14-D728E0DE70F7"
     scripts:
       - name: Schedule an automation test with Sofy
         script: |
